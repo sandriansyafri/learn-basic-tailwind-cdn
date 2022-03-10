@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<script src="../dist/js/tailwind.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
 		<script>
 			tailwind.config = {
+				darkMode: "class",
 				theme: {
 					extend: {
 						fontFamily: {
@@ -19,6 +18,59 @@
 		</script>
 	</head>
 	<body>
-		<h1 class="font-inter">Init</h1>
+		<div class="max-w-5xl mx-auto shadow-md p-16 rounded-xl my-10 font-inter text-slate-800">
+			<div class="p-5 border-2 border-slate-800 space-y-10">
+				<section id="item-1">
+					<p class="text-xl font-semibold">Playground</p>
+					<div class="text-center">
+						<button
+							type="button"
+							class="hover:scale-[.97] transition-all duration-500 py-2 px-4 bg-blue-600 hover:bg-blue-700 active:ring active:ring-offset-1 rounded-xl w-1/6 text-white tracking-wide"
+						>
+							Button
+						</button>
+					</div>
+				</section>
+				<section id="item-2">
+					<div class="max-w-sm mx-auto shadow-md rounded-xl overflow-hidden cursor-pointer group">
+						<!-- <div class="h-56 w-full shadow-md">
+                                    <div class="w-full h-full object-cover bg-center bg-[url('./assets/image/image.jfif')]"></div>
+                              </div> -->
+						<div class="p-7 group-hover:bg-blue-700 transition-all duration-500 cursor-pointer">
+							<h1 class="selection:bg-lime-400 selection:text-slate-800 text-2xl font-bold text-slate-800 group-hover:text-white transition-all duration-500 mb-3">
+								Title
+							</h1>
+							<p
+								class="first-letter:float-left first-letter:text-2xl first-letter:mr-2 first-letter:font-bold selection:bg-lime-400 selection:text-slate-800 transition-all duration-500 leading-relaxed text-sm text-slate-700 group-hover:text-white"
+							>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. At laudantium blanditiis laboriosam, molestias cumque, placeat error pariatur sint est incidunt
+								esse saepe in dolore inventore! Laudantium natus maxime harum, rerum quod magni velit delectus saepe mollitia nemo officiis, eaque expedita excepturi
+								nobis consequatur fuga, nam recusandae laborum voluptas omnis hic.
+							</p>
+							<div class="clear-both"></div>
+						</div>
+					</div>
+				</section>
+				<section id="item-2">
+					<div class="max-w-md mx-auto shadow-md rounded-xl overflow-hidden cursor-pointer group p-10">
+						<form>
+							<div>
+								<label for="email" class="block mb-1">
+									<span class="font-bold tracking-wide after:content-['*'] after:ml-1 after:text-pink-700">Email</span>
+								</label>
+								<input
+									autocomplete="off"
+									placeholder="example@gmail.com"
+									class="peer focus:valid:text-slate-800 placeholder:text-sm focus:invalid:border-pink-700 focus:invalid:text-pink-700 tracking-wide placeholder:text-slate-500 w-full border outline-none py-2 px-4 rounded-md focus:border focus:border-blue-600"
+									type="email"
+									id="email"
+								/>
+								<p class="hidden peer-invalid:block text-pink-700 tracking-wide">* invalid feedback</p>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth" id="html">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,34 @@
 			};
 		</script>
 	</head>
-	<body>
-		<h1 class="font-inter">Init</h1>
+	<body class="text-slate-800 pb-[2000px]" id="body">
+		<div class="max-w-5xl p-10 my-10 shadow-md mx-auto rounded-sm">
+			<h1 class="text-3xl font-bold tracking-wide mb-3">Layouting</h1>
+			<main class="space-y-6">
+				<section id="item-1">
+					<div class="max-w-md mx-auto shadow rounded">
+						<div class="p-10 relative">
+							<div class="fixed bottom-5 right-5 -translate-x-1/2 w-10 h-10 bg-blue-200 rounded-full flex">
+								<a href="#html" class="m-auto text-sm font-bold text-blue-400">Top</a>
+							</div>
+							<h1 class="text-xl mb-1 font-bold tracking-wide">Title</h1>
+							<p class="relative text-slate-700 text-sm tracking-wide">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo voluptate dolor cupiditate adipisci, laboriosam non dignissimos perspiciatis et maiores,
+								fugit nemo molestias ratione ea distinctio ad. Non quidem dolore velit sint maxime dolorem quo nisi debitis unde? Aperiam, autem magni?
+							</p>
+						</div>
+					</div>
+				</section>
+				<section id="item-2">
+					<div class="w-full mx-auto rounded">
+						<div class="p-10 columns-3">
+							<div class="shadow-md shadow-slate-400/40 p-5 rounded-md">col-1</div>
+							<div class="shadow-md shadow-slate-400/40 p-5 rounded-md">col-1</div>
+							<div class="shadow-md shadow-slate-400/40 p-5 rounded-md">col-1</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
 	</body>
 </html>

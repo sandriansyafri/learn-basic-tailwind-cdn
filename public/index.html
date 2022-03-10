@@ -20,39 +20,85 @@
 	</head>
 	<body class="font-inter">
 		<!-- DESKTOP MODE -->
-		<div class="max-w-5xl mx-auto shadow-lg rounded-lg p-10 my-5 space-y-5">
-			<h1 class="text-5xl font-bold tracking-wider">Spacing</h1>
-			<section id="spacing">
-				<div class="flex gap-6">
-					<div>
-						<p class="font-bold text-xl mb-3 text-center tracking-wide">pt-6</p>
-						<div class="h-32 w-32 bg-purple-700 pt-6 overflow-hidden rounded-lg">
-							<div class="pt-6 border-2 border-dotted">Box 1</div>
+		<div class="max-w-5xl mx-auto shadow-lg rounded-lg p-10 my-10 space-y-5">
+			<h1 class="text-5xl font-bold tracking-wider mb-10 text-center">Spacing</h1>
+			<main class="space-y-10">
+				<section id="padding" class="p-10 border-2 border-slate-800 rounded-xl">
+					<div id="wrapper">
+						<h1 class="text-3xl font-bold tracking-wider my-5 flex"><span class="pb-3 border-b-4 border-slate-800">Padding</span></h1>
+						<div class="flex gap-6">
+							<div>
+								<p class="font-bold text-xl mb-3 text-center tracking-wide">pt-6</p>
+								<div class="h-32 w-32 bg-purple-700 pt-6 overflow-hidden rounded-lg">
+									<div class="pt-6 border-2 border-dotted">Box 1</div>
+								</div>
+							</div>
+							<div>
+								<p class="font-bold text-xl mb-3 text-center tracking-wide">pr-6</p>
+								<div class="h-32 w-32 bg-purple-700 pt-6 flex overflow-hidden rounded-lg">
+									<div class="pr-6 border-2 border-dotted self-start">text 1</div>
+									<div>text 2</div>
+								</div>
+							</div>
+							<div>
+								<p class="font-bold text-xl mb-3 text-center tracking-wide">pl-6</p>
+								<div class="h-32 w-32 bg-purple-700 pt-6 flex overflow-hidden rounded-lg">
+									<div>text 1</div>
+									<div class="pl-6 border-2 border-dotted self-start">text 2</div>
+								</div>
+							</div>
+							<div>
+								<p class="font-bold text-xl mb-3 text-center tracking-wide">pb-6</p>
+								<div class="h-32 w-32 bg-purple-700 pt-6 block overflow-hidden rounded-lg">
+									<div class="pb-6 border-2 border-dotted">text 1</div>
+									<div>text 2</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div>
-						<p class="font-bold text-xl mb-3 text-center tracking-wide">pr-6</p>
-						<div class="h-32 w-32 bg-purple-700 pt-6 flex overflow-hidden rounded-lg">
-							<div class="pr-6 border-2 border-dotted self-start">text 1</div>
-							<div>text 2</div>
+				</section>
+				<section id="margin" class="p-10 border-2 border-slate-800 rounded-xl">
+					<h1 class="text-3xl font-bold tracking-wider my-5 flex"><span class="pb-3 border-b-4 border-slate-800">Margin</span></h1>
+					<div class="flex gap-6 text-white">
+						<div>
+							<p class="font-bold text-xl text-center tracking-wide text-slate-800">mt-6</p>
+							<div class="h-32 w-32 bg-purple-700 rounded-xl">
+								<div>
+									<div>item 1</div>
+									<div class="mt-6 border-2 border-dotted">item 2</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p class="font-bold text-xl text-center tracking-wide text-slate-800">mr-6</p>
+							<div class="flex h-32 w-32 bg-purple-700 rounded-xl">
+								<div class="flex">
+									<div class="self-start mr-6 border-2 border-dotted">text 1</div>
+									<div>text 2</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p class="font-bold text-xl text-center tracking-wide text-slate-800">ml-6</p>
+							<div class="flex h-32 w-32 bg-purple-700 rounded-xl">
+								<div class="flex">
+									<div>text 1</div>
+									<div class="self-start ml-6 border-2 border-dotted">text 2</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p class="font-bold text-xl text-center tracking-wide text-slate-800">mb-6</p>
+							<div class="flex h-32 w-32 bg-purple-700 rounded-xl">
+								<div class="flex flex-col">
+									<div class="mb-6 border-2 border-dotted">text 1</div>
+									<div>text 2</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div>
-						<p class="font-bold text-xl mb-3 text-center tracking-wide">pl-6</p>
-						<div class="h-32 w-32 bg-purple-700 pt-6 flex overflow-hidden rounded-lg">
-							<div>text 1</div>
-							<div class="pl-6 border-2 border-dotted self-start">text 2</div>
-						</div>
-					</div>
-					<div>
-						<p class="font-bold text-xl mb-3 text-center tracking-wide">pb-6</p>
-						<div class="h-32 w-32 bg-purple-700 pt-6 block overflow-hidden rounded-lg">
-							<div class="pb-6 border-2 border-dotted">text 1</div>
-							<div>text 2</div>
-						</div>
-					</div>
-				</div>
-			</section>
+				</section>
+			</main>
 		</div>
 	</body>
 </html>
